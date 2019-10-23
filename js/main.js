@@ -25,11 +25,45 @@
             });
         });
 
-
+/*
         document.querySelector("snByac").onclick = function(){
             var r = document.querySelector("DWPxHb").classList.toggle("move");
             this.textContent = r ? "Заезд" : "Въезд";
         }
+*/
+
+        $(function(){
+
+            $('.XlMhZe').click(function(e){
+                e.preventDefault();
+
+                let val = parseInt($(this).find('.jUL89d').text());
+                $(this).find('.jUL89d').text(val + 1);
+                
+            })
+
+        });
 
 
-        
+        function showOpen() {
+            //Если элемент с id-шником element_id существует
+            if ((document.getElementById("open")) &&  (document.getElementById("colorHide"))) { 
+                //Записываем ссылку на элемент в переменную obj
+                var obj = document.getElementById("open"); 
+                //Если css-свойство display не block, то: 
+                if ((obj.style.maxHeight != "1000px") &&  (document.getElementById("colorHide").style.display != "none")) { 
+                    obj.style.maxHeight = "1000px";
+                    document.getElementById("colorHide").style.display = "none";
+                     //Показываем элемент
+                }
+                else {
+                    obj.style.maxHeight = "144px"; 
+                    document.getElementById("colorHide").style.display = "inline-block"; //Скрываем элемент
+                }
+            }
+            //Если элемент с id-шником element_id не найден, то выводим сообщение
+            else alert("Элемент с id: " + open + " не найден!"); 
+        } 
+      
+   
+      
