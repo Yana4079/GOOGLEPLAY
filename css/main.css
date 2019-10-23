@@ -4696,9 +4696,16 @@ html{height:100%;overflow:hidden}body{height:100%;overflow:hidden;-webkit-font-s
             cursor: pointer;
             height: 38px;
             width: 38px;
+            position: absolute;
         }
         .owl-carousel .owl-stage-outer {
             position: relative;
+          }
+          .owl-prev img {
+            left: -50px;
+          }
+          .owl-next img {
+            right: -51px;
           }
           
            .owl-nav {
@@ -4719,6 +4726,23 @@ html{height:100%;overflow:hidden}body{height:100%;overflow:hidden;-webkit-font-s
             display: none;
         }
         .owl-carousel {
-      
+          
            
+        }
+        .DPvwYc {
+            background: url(../img/450015.png);
+        }
+        .show-block {
+            display: block;
+          }
+
+          .move{
+            transform: translateY(200px);
+        }
+
+        .owl-carousel {
+            display: none;
+            width: 86% !important;
+            z-index: 1 !important;
+            margin: 0 auto !important;
         }
